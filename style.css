@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+
+
+.hover-zoom:hover .bg-img {
+    transform: scale(1.1);
+  }
+  .bg-img {
+    transition: transform 0.3s ease-in-out;
+  }
+/* Additional Centering */
+
+/* Mobile menu animation */
+#mobileMenu {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#mobileMenu:not(.hidden) {
+  opacity: 1;
+}
+
+#mobileMenu {
+  background-color: #000035; /* Semi-transparent blue background */
+  color: white; /* White text color for better contrast */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in/out effect */
+}
+
+#mobileMenu:not(.hidden) {
+  opacity: 1; /* Fully visible when not hidden */
+}
+
+
+
+.ulmobile li a {
+  color: white; /* Ensure links are white */
+  font-size: 1.25rem; /* Adjust font size for better readability */
+  text-decoration: none; /* Remove underline */
+}
+
+.ulmobile li a:hover {
+  color: #f0e68c; /* Add a hover effect, e.g., light yellow */
+}
+
+.brochar {
+  background-color: #000053; /* Button background */
+  color: white; /* Button text color */
+  font-weight: bold; /* Bold text */
+  padding: 0.5rem 1.5rem; /* Add padding */
+  border-radius: 25px; /* Rounded corners */
+}
+
+.brochar:hover {
+  background-color: #000053; /* Darker blue on hover */
+}
+
+
+/* Show button when scrolled down ------------------------------------------*/
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 100px; /* Moved up by 20px (previously 20px) */
+  left: 30px;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  background-color: #ca0707; /* WhatsApp green color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  z-index: 1000; /* Ensure it's on top of other content */
+  transition: background-color 0.3s ease;
+}
+.scroll-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Apply Playfair Display font to h1, h2, h3 */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Apply Questrial font to h4, h5, h6 */
+h3, h4, h5, h6 {
+  font-family: 'Questrial', sans-serif;
+}
+
+/* Apply Helvetica font to all paragraph tags */
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: General body styling with fallback font */
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Whatsapp Button
+--------------------------------------------------------------*/
+/* WhatsApp Button CSS */
+.whatsapp-button{
+  position: fixed;
+  bottom: 100px; /* Moved up by 20px (previously 20px) */
+  right: 30px;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  background-color: #25D366; /* WhatsApp green color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  z-index: 1000; /* Ensure it's on top of other content */
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+  width: 40px; /* Adjust size of the icon */
+}
+
+.whatsapp-button:hover {
+  background-color: #118509; /* Darker green for hover effect */
+}
+    /* swiper product ---------------------------------------*/
+.swiper-button-next,
+  .swiper-button-prev{
+    color: #e42908 !important;  
+  }
+  
+  .swiper-pagination
+  .swiper-pagination-bullet {
+    background-color: #e42908 !important;
+  }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#slider-track {
+  padding-left: 0; 
+  padding-right: 0; 
+}
+#imageModal {
+  display: none;
+}
+#imageModal.show {
+  display: flex;
+}
+
+
+/* <!-- Marquee Animation --> */
+
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .marquee p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+
+  /* Custom Navigation Buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #000053!important; 
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+  }
+  /* Move the buttons outside */
+.swiper-button-prev {
+  left: -50px; /* Move left */
+}
+
+.swiper-button-next {
+  right: -50px; /* Move right */
+}
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    transform: scale(1.15); /* Slight zoom on hover */
+  }
+
+  /* Adjust icon size */
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 30px !important; /* Smaller icons */
+  }
+  
