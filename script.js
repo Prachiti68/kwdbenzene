@@ -1,54 +1,44 @@
-  //header script--------------------------------------------------------------------------------
-  document.addEventListener("DOMContentLoaded", function () {
-    // Active page highlighting
-    const currentPage = window.location.pathname.split("/").pop();
-    document.querySelectorAll("nav a").forEach((link) => {
+document.addEventListener("DOMContentLoaded", function () {
+  // Active page highlighting
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll("nav a").forEach((link) => {
       if (link.getAttribute("href") === currentPage) {
-        link.classList.add("font-bold");
+          link.classList.add("font-bold");
       }
-    });
-  
-    // Dropdown functionality
-    const productMenu = document.getElementById("contact");
-    const dropdown = document.getElementById("contactDropdown");
-  
-    productMenu.addEventListener("mouseenter", () => {
-      dropdown.classList.remove("hidden");
-    });
-  
-    productMenu.addEventListener("mouseleave", () => {
-      dropdown.classList.add("hidden");
-    });
-  
-    dropdown.addEventListener("mouseenter", () => {
-      dropdown.classList.remove("hidden");
-    });
-  
-    dropdown.addEventListener("mouseleave", () => {
-      dropdown.classList.add("hidden");
-    });
-  
-    // Close dropdown when clicking anywhere outside the dropdown's width
-    document.addEventListener("click", (event) => {
-      const dropdownRect = dropdown.getBoundingClientRect();
-      if (
-        !productMenu.contains(event.target) &&
-        !dropdown.contains(event.target) &&
-        (event.clientX < dropdownRect.left || event.clientX > dropdownRect.right || event.clientY < dropdownRect.top || event.clientY > dropdownRect.bottom)
-      ) {
-        dropdown.classList.add("hidden");
-      }
-    });
-  
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById("mobileMenuButton");
-    const mobileMenu = document.getElementById("mobileMenu");
-  
-    mobileMenuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
   });
-  
+
+   // Dropdown functionality
+   const productMenu = document.getElementById("contact");
+   const dropdown = document.getElementById("productDropdown");
+
+   // Toggle dropdown on hover
+   productMenu.addEventListener("mouseover", () => {
+       dropdown.classList.remove("hidden");
+   });
+
+   // Close dropdown when clicking outside
+   document.addEventListener("click", (event) => {
+       if (!productMenu.contains(event.target) && !dropdown.contains(event.target)) {
+           dropdown.classList.add("hidden");
+       }
+   });
+
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById("mobileMenuButton");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", (event) => {
+      if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+          mobileMenu.classList.add("hidden");
+      }
+  });
+});
+
 // back to top button ------------------------------------------------------------------------
 var mybutton = document.getElementById("scrollToTopBtn");
 
