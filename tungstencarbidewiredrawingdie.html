@@ -6,7 +6,10 @@
     <title>Home</title>
     <link href="./output.css" rel="stylesheet" />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -51,33 +54,30 @@
       </a>
 
         <!-- Navbar Items -->
-        <ul class="flex justify-center items-center gap-4 text-lg z-50">
-          <!-- Home Link -->
-          <li><a href="index.html" class="itisactive hover:text-[#001896]">Home</a></li>
+      <ul class="flex justify-center items-center gap-6 text-md lg:text-lg  z-50">
+        <!-- Home Link -->
+        <li><a href="index.html" class="itisactive hover:text-[#001896]">Home</a></li>
 
-          <!-- About Link -->
-          <li id="about" class="relative py-6 cursor-pointer">
-            <a href="about.html" class=" hover:text-[#001896]">About</a>
-          </li>
-          <!-- blogs -->
-          <!-- <li class="relative py-6 cursor-pointer">
-            <a href="blogs.html" class=" hover:text-[#001896]">Blogs</a>
-          </li> -->
+        <!-- About Link -->
+        <li id="about" class="relative py-6 cursor-pointer">
+          <a href="about.html" class=" hover:text-[#001896]">About</a>
+        </li>
+        
+        <!-- Products Link -->
+        <li id="contact" class="relative py-6 cursor-pointer">
+          <a href="products.html" class=" hover:text-[#001896]">Products <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        
+        <!-- gallery  -->
+        <li class="relative py-6 cursor-pointer">
+          <a href="gallery.html" class=" hover:text-[#001896]">Gallery</a>
+        </li>
 
-          <!-- gallery  -->
-          <li class="relative py-6 cursor-pointer">
-            <a href="gallery.html" class=" hover:text-[#001896]">Gallery</a>
-          </li>
-
-          <!-- Products Link -->
-          <li id="contact" class="relative py-6 cursor-pointer">
-            <a href="Products.html" class=" hover:text-[#001896]">Products <i class="fa-solid fa-chevron-down"></i></a>
-          </li>
-          <!-- contact  -->
-          <li class="relative py-6 cursor-pointer">
-            <a href="contact.html" class=" hover:text-[#001896]">Contact</a>
-          </li>
-        </ul>
+        <!-- contact  -->
+        <li class="relative py-6 cursor-pointer">
+          <a href="contact.html" class=" hover:text-[#001896]">Contact</a>
+        </li>
+      </ul>
 
         <!-- Search Input -->
 
@@ -91,7 +91,7 @@
         </a>
         
         <!-- Independent Dropdown for products -->
-        <div id="productDropdown" class="hidden  absolute justify-center w-auto py-4 top-[4.6rem] rounded-b-md animate-dropdown text-black">
+        <div id="productDropdown" class="hidden  absolute justify-center w-auto py-4 top-[4.6rem] rounded-b-md animate-dropdown text-[#000035]">
           <div class="container flex items-center justify-center mx-auto">
             <ul class="dropper flex justify-evenly flex-col gap-1 py-4 text-lg bg-white pl-6 pr-4">
               <li class="py-1 px-4 cursor-pointer flex relative justify-start items-center hover:bg-[#001896] hover:text-white">
@@ -129,7 +129,7 @@
               </li>
               <!-- View All Products Link -->
               <li class="py-2 px-4 mt-2 text-center border-t border-gray-200">
-                <a href="Products.html" class="text-[#001896] hover:text-blue-800">
+                <a href="products.html" class="text-[#001896] hover:text-blue-800">
                   View All Products <i class="fas fa-arrow-right ml-2"></i>
                 </a>
               </li>
@@ -154,7 +154,7 @@
           <li class="text-center"><a href="index.html" class="text-white ">Home</a></li>
           <li class="text-center"><a href="about.html" class="text-white">About</a></li>
           <li class="text-center"><a href="gallery.html" class="text-white">Gallery</a></li>
-          <li class="text-center"><a href="Products.html" class="text-white">Products</a></li>
+          <li class="text-center"><a href="products.html" class="text-white">Products</a></li>
           <li class="text-center"><a href="contact.html" class="text-white">Contact</a></li>
         </ul>
 
@@ -599,7 +599,7 @@
 
 
       <!-- WhatsApp Button HTML -->
-      <a class="whatsapp-button" href="https://wa.me/9112000" target="_blank" title="Chat with us on WhatsApp"> 
+      <a class="whatsapp-button" href="https://wa.me/919321584055" target="_blank" title="Chat with us on WhatsApp"> 
           <img src="assets/img/icon/whatsapp.png" alt="WhatsApp" class="whatsapp-icon"/>
       </a>
           

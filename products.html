@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link href="./output.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -45,15 +48,17 @@
         <li id="about" class="relative py-6 cursor-pointer">
           <a href="about.html" class=" hover:text-[#001896]">About</a>
         </li>
+        
+        <!-- Products Link -->
+        <li id="contact" class="relative py-6 cursor-pointer">
+          <a href="products.html" class=" hover:text-[#001896]">Products <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        
         <!-- gallery  -->
         <li class="relative py-6 cursor-pointer">
           <a href="gallery.html" class=" hover:text-[#001896]">Gallery</a>
         </li>
 
-        <!-- Products Link -->
-        <li id="contact" class="relative py-6 cursor-pointer">
-          <a href="Products.html" class=" hover:text-[#001896]">Products <i class="fa-solid fa-chevron-down"></i></a>
-        </li>
         <!-- contact  -->
         <li class="relative py-6 cursor-pointer">
           <a href="contact.html" class=" hover:text-[#001896]">Contact</a>
@@ -71,7 +76,7 @@
       </a>
       
       <!-- Independent Dropdown for products -->
-      <div id="productDropdown" class="hidden  absolute justify-center w-auto py-4 top-[4.6rem] rounded-b-md animate-dropdown text-black">
+      <div id="productDropdown" class="hidden  absolute justify-center w-auto py-4 top-[4.6rem] rounded-b-md animate-dropdown text-[#000035]">
         <div class="container flex items-center justify-center mx-auto">
           <ul class="dropper flex justify-evenly flex-col gap-1 py-4 text-lg bg-white pl-6 pr-4">
             <li class="py-1 px-4 cursor-pointer flex relative justify-start items-center hover:bg-[#001896] hover:text-white">
@@ -109,7 +114,7 @@
             </li>
             <!-- View All Products Link -->
             <li class="py-2 px-4 mt-2 text-center border-t border-gray-200">
-              <a href="Products.html" class="text-[#001896] hover:text-blue-800">
+              <a href="products.html" class="text-[#001896] hover:text-blue-800">
                 View All Products <i class="fas fa-arrow-right ml-2"></i>
               </a>
             </li>
@@ -134,7 +139,7 @@
         <li class="text-center"><a href="index.html" class="text-white ">Home</a></li>
         <li class="text-center"><a href="about.html" class="text-white">About</a></li>
         <li class="text-center"><a href="gallery.html" class="text-white">Gallery</a></li>
-        <li class="text-center"><a href="Products.html" class="text-white">Products</a></li>
+        <li class="text-center"><a href="products.html" class="text-white">Products</a></li>
         <li class="text-center"><a href="contact.html" class="text-white">Contact</a></li>
       </ul>
 
@@ -223,11 +228,11 @@
       <footer class="relative bg-[#000035] text-white py-8 px-6 ">
         <!-- Background Image Layer -->
         <div class="absolute inset-0 bg-[url('assets/img/wire1.jpeg')] bg-cover bg-center opacity-5 z-0"></div>
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
             
             <!-- Company Info Section -->
             <div class="space-y-3 z-20">
-  <a class="z-10" href="index.html"><img src="assets/img/footer_logo.png" alt=" Logo" class="w-60 mb-2 z-50"></a>  
+                <a class="z-10" href="index.html"><img src="assets/img/footer_logo.png" alt=" Logo" class="w-60 mb-2 z-50"></a>
                 <h2 class="text-lg font-semibold">Khurana Wire Drawing Dies Private Limited</h2>
                 <ul>
                   <li class="flex items-center mb-4"><img src="assets/icons/location.png" alt="location" class="w-6 mr-4"></img><a href="https://maps.app.goo.gl/xpQBtfGTnbHieW688" class="z-10">No.27, Ground Floor, Punjani Industrial Estate, Khopat, Khopat, Thane, Maharashtra - 400601, India</a></li>
@@ -236,22 +241,7 @@
               </ul>
             </div>
     
-            <!-- Useful Links & Products -->
-            <div class="grid grid-cols-1 gap-6 z-20">
-                <div>
-                    <h3 class="text-lg font-semibold py-6">Useful Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Home</a></li>
-                        <li><a href="about.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>About</a></li>
-                        <li><a href="products.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Products</a></li>
-                        <li><a href="gallery.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Gallery</a></li>
-                        <!-- <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Die Chart</a></li> -->
-                        <li><a href="contact.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Contact Us</a></li>
-                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
+          
             <div class="grid grid-cols-1 gap-6 z-20">
               <div>
                 <h3 class="text-lg font-semibold py-6">Our Products</h3>
@@ -270,15 +260,31 @@
                 </ul>
             </div>
             </div>
+              <!-- Useful Links & Products -->
+              <div class="grid grid-cols-1 gap-6 z-20">
+                <div>
+                    <h3 class="text-lg font-semibold py-6">Useful Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>About</a></li>
+                        <li><a href="products.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Products</a></li>
+                        <li><a href="gallery.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Gallery</a></li>
+                        <!-- <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Die Chart</a></li> -->
+                        <li><a href="contact.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Contact Us</a></li>
+                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
     
             <!-- Certifications  -->
-             <div class="md:text-left space-y-3 z-20">
-              <h3 class="text-lg font-semibold py-6">Celebrating 60 Years of Excellence</h3>
-              <div class="flex justify-center md:justify-start space-x-4">
-                  <img src="assets/img/60th.png" alt="60 Years" class="  w-28 md:w-28 lg:w-28 bg-white">
-                  <img src="assets/img/iso.jpg" alt="ISO Certified" class="  w-28 md:w-28 lg:w-28">
-              </div>  
-          </div>
+            <div class="md:text-left space-y-3 z-20">
+                <h3 class="text-lg font-semibold py-6">Celebrating 60 Years of Excellence</h3>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <img src="assets/img/60th.png" alt="60 Years" class="  w-28 md:w-28 lg:w-28 bg-white">
+                    <img src="assets/img/iso.jpg" alt="ISO Certified" class="  w-28 md:w-28 lg:w-28">
+                </div>  
+            </div>
         </div>
     
         <!-- Copyright -->
@@ -303,7 +309,7 @@
 
 
       <!-- WhatsApp Button HTML -->
-      <a class="whatsapp-button" href="https://wa.me/9112000" target="_blank" title="Chat with us on WhatsApp"> 
+      <a class="whatsapp-button" href="https://wa.me/919321584055" target="_blank" title="Chat with us on WhatsApp"> 
           <img src="assets/img/icon/whatsapp.png" alt="WhatsApp" class="whatsapp-icon"/>
       </a>
           
