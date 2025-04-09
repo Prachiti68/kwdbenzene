@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  <title>KWD - Gallery</title>
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +75,7 @@
           <button
               type="button"
               class="border border-[#000053] w-36 lg:w-40 text-blue-900 px-2 py-2 rounded-full flex items-center justify-center gap-1 group">
-              <p class="text-base transition-transform transform group-hover:-translate-x-2">Get Brochure</p>
+              <p class="text-base transition-transform transform group-hover:-translate-x-2 leading-tight">Get Brochure</p>
               <img src="assets/icons/download.png" alt="download" class="w-6 transition-transform transform group-hover:scale-125">
           </button>
       </a>
@@ -189,7 +190,7 @@
       <!-- brochure form end-->
 
       <!--About Hero Section Starts -->
-      <section class="relative bg-gradient-to-l from-[#000053] to-[#000035] text-white  md:mt-12 overflow-hidden h-auto lg:h-[40vh] flex items-center mt-12">
+      <section class="relative bg-gradient-to-l from-[#000053] to-[#000035] text-white  lg:mt-12 overflow-hidden h-auto lg:h-[40vh] flex items-center mt-20">
         <!-- Background Image Layer -->
         <div class="absolute inset-0 bg-[url('assets/img/background2.jpg')] bg-cover bg-center opacity-10"></div>
 
@@ -221,43 +222,48 @@
       <!-- Filter Buttons -->
       <div class="flex flex-wrap justify-center space-x-4 mb-6">
           <button class="filter-btn active-filter bg-gradient-to-r from-[#C4188C] to-[#532D86] text-white px-4 py-2 rounded-full hover:bg-gradient-to-l " data-filter="all">All</button>
-          <button class="filter-btn bg-gradient-to-r from-[#C4188C] to-[#532D86] text-white px-4 py-2 rounded-full hover:bg-gradient-to-l" data-filter="nature">Awards</button>
-          <button class="filter-btn bg-gradient-to-r from-[#C4188C] to-[#532D86] text-white px-4 py-2 rounded-full hover:bg-gradient-to-l" data-filter="architecture">Products</button>
-          <button class="filter-btn bg-gradient-to-r from-[#C4188C] to-[#532D86] text-white px-4 py-2 rounded-full hover:bg-gradient-to-l" data-filter="people">Team</button>
+          <button class="filter-btn bg-gradient-to-r from-[#C4188C] to-[#532D86] text-white px-4 py-2 rounded-full hover:bg-gradient-to-l" data-filter="awards">Certificates</button>
+          <button class="filter-btn bg-gradient-to-r from-[#C4188C] to-[#532D86] text-white px-4 py-2 rounded-full hover:bg-gradient-to-l" data-filter="products">Products</button>
+          <!-- <button class="filter-btn bg-gradient-to-r from-[#C4188C] to-[#532D86] text-white px-4 py-2 rounded-full hover:bg-gradient-to-l" data-filter="people">Team</button> -->
       </div>
 
       <!-- Image Grid -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div class="gallery-item nature">
-              <a href="assets/img/banner1.avif" data-fancybox="gallery">
-                  <img src="assets/img/banner1.avif" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+          <div class="gallery-item awards">
+              <a href="assets/img/usab.jpg" data-fancybox="gallery">
+                  <img src="assets/img/usab.jpg" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               </a>
           </div>
-          <div class="gallery-item architecture">
-              <a href="assets/img/2.avif" data-fancybox="gallery">
-                  <img src="assets/img/2.avif" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+          <div class="gallery-item products">
+              <a href="assets/img/about1.png" data-fancybox="gallery">
+                  <img src="assets/img/about1.png" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               </a>
           </div>
-          <div class="gallery-item people">
-              <a href="assets/img/1.avif" data-fancybox="gallery">
-                  <img src="assets/img/1.avif" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+          <div class="gallery-item products">
+              <a href="assets/img/wire2.jpeg" data-fancybox="gallery">
+                  <img src="assets/img/wire2.jpeg" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               </a>
           </div>
-          <div class="gallery-item nature">
-              <a href="assets/img/products/3.webp" data-fancybox="gallery">
-                  <img src="assets/img/products/3.webp" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+          <div class="gallery-item awards">
+              <a href="assets/img/sigcert.png" data-fancybox="gallery">
+                  <img src="assets/img/sigcert.png" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               </a>
           </div>
-          <div class="gallery-item architecture">
-              <a href="assets/img/14.png" data-fancybox="gallery">
-                  <img src="assets/img/14.png" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+          <div class="gallery-item products">
+              <a href="assets/img/about2.png" data-fancybox="gallery">
+                  <img src="assets/img/about2.png" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               </a>
           </div>
-          <div class="gallery-item people">
-              <a href="assets/img/background2.jpg" data-fancybox="gallery">
-                  <img src="assets/img/background2.jpg" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+          <div class="gallery-item products">
+              <a href="assets/img/wire1.jpeg" data-fancybox="gallery">
+                  <img src="assets/img/wire1.jpeg" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               </a>
           </div>
+          <div class="gallery-item products">
+            <a href="assets/img/about3.png" data-fancybox="gallery">
+                <img src="assets/img/about3.png" alt="" class="rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+            </a>
+        </div>
       </div>
   </div>
     <!-- Gallery section ends -->

@@ -22,20 +22,25 @@
     data = "";
     
     for (let i = 0; i < displayedProducts; i++) {
-      if (i < products.length) {
-        data += `
-        <div class="bg-[#000035] p-8 shadow-2xl  rounded-3xl transition-all duration-300 hover:p-9 custom-border-radius"
-          style="background-image:linear-gradient(rgba(0, 0, 0, 0.227),rgba(0, 0, 0, 0.44)), url('${products[i].imageUrl}'); background-size: contain; background-repeat: no-repeat; background-position: center; display: flex; flex-direction: column; justify-content: flex-end; height: 20rem; width: 24rem;">
-          <a href="${products[i].link}" class="flex justify-center items-center flex-col">
-            <h2 class="text-xl font-extrabold text-white mb-2">${products[i].title}</h2>
-            <button type="button" class=" w-full sm:w-auto px-6 py-3 bg-white border border-[#000053] text-[#000053] font-semibold rounded-full  ease-in">
-              ${products[i].buttonText}
-            </button>
-          </a>
-        </div>
-        `;
-      }
-    }
+  if (i < products.length) {
+    data += `
+      <div class="p-4 sm:p-6 md:p-8 shadow-2xl rounded-2xl transition-all duration-300 hover:shadow-3xl custom-border-radius
+        w-[90%] sm:w-[18rem] md:w-[20rem] lg:w-[22rem] xl:w-[24rem] h-[18rem] sm:h-[20rem] md:h-[22rem] lg:h-[24rem] mx-auto"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.44)), url('${products[i].imageUrl}');
+        background-size: cover; background-repeat: no-repeat; background-position: center; display: flex; flex-direction: column; justify-content: flex-end;">
+        
+        <a href="${products[i].link}" class="flex justify-center items-center flex-col text-center">
+          <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 drop-shadow-md mb-2">${products[i].title}</h3>
+          <button type="button" class="w-full sm:w-auto px-6 py-3 bg-white border border-[#000053] text-[#000053] font-semibold rounded-full hover:scale-105 transition cursor-pointer ease-in">
+            ${products[i].buttonText}
+          </button>
+        </a>
+      </div>
+    `;
+  }
+}
+
+    
     
     document.querySelector('.productsec').innerHTML = data;
     
