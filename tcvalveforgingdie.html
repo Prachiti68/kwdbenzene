@@ -46,7 +46,8 @@
     <div class="wrapper  h-screen w-full">
       <!-- Header start -->
       <header id="head" class="fixed w-full top-0 backdrop-blur-lg bg-[white] text-[#000053] shadow-lg z-50 mx-auto ">
-      <nav class="hidden w-full container md:flex justify-between md:justify-evenly items-center px-4 relative z-50">
+      <nav class="hidden w-full md:flex justify-between md:justify-around items-center px-4 lg:px-0 mx-auto relative z-50">
+
         <!-- Logo -->
       <a href="index.html">
         <div class="w-40 logo font-bold text-[#fff]">
@@ -170,7 +171,7 @@
       <!-- Header ends -->
 
       <!-- brochure form  start-->
-      <div id="formModal" class="fixed inset-0 flex justify-center items-center bg-gray-500 bg-opacity-50 z-50 hidden">
+      <div id="formModal" class="fixed inset-0 flex justify-center items-center z-50 hidden">
         <div class="bg-white p-6 rounded-lg relative w-96">
             <!-- Close Button -->
             <span id="closeModal" class="absolute top-2 right-2 cursor-pointer text-xl font-bold text-[#000053]">&times;</span>
@@ -462,7 +463,7 @@
               </a>
               <!-- Card 8 -->
               <a href="tcdiesforconcretenail.html" class="card bg-white shadow-lg rounded-lg overflow-hidden inline-block" >
-                <img src="assets/img/products/HydraulicCylindersJacks/1 FVPS.jpg" alt="TC Dies for Concrete Nail" class="w-full h-56 object-cover"/>
+                <img src="assets/coming_soon.png" alt="TC Dies for Concrete Nail" class="w-full h-56 object-cover"/>
                 <div class="p-4 text-center">
                   <p class="text-gray-700 font-medium">
                     TC Dies for Concrete Nail
@@ -471,7 +472,7 @@
               </a>
               <!-- Card 9 -->
               <a href="tccompactingdies.html" class="card bg-white shadow-lg rounded-lg overflow-hidden inline-block" >
-                <img src="assets/img/products/HydraulicCylindersJacks/1 FVPS.jpg" alt="TC Compacting Dies" class="w-full h-56 object-cover"/>
+                <img src="assets/coming_soon.png" alt="TC Compacting Dies" class="w-full h-56 object-cover"/>
                 <div class="p-4 text-center">
                   <p class="text-gray-700 font-medium">
                     TC Compacting Dies
@@ -502,23 +503,39 @@
       </section>
       <!-- Footer -->
         
-      <footer class="relative bg-[#000035] text-white py-8 px-6 ">
+      <footer class="relative bg-[#000035] text-white py-8 px-6 lg:px-20">
         <!-- Background Image Layer -->
         <div class="absolute inset-0 bg-[url('assets/img/wire1.jpeg')] bg-cover bg-center opacity-5 z-0"></div>
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
             
             <!-- Company Info Section -->
             <div class="space-y-3 z-20">
-  <a class="z-10" href="index.html"><img src="assets/img/footer_logo.png" alt=" Logo" class="w-60 mb-2 z-50"></a>  
-                <h2 class="text-lg font-semibold">Khurana Wire Drawing Dies Private Limited</h2>
+  <a class="z-10" href="index.html"><img src="assets/img/footerlogo.png" alt=" Logo" class="w-full mb-2 z-50"></a>  
+                <!-- <h3 class="text-lg font-semibold">Khurana Wire Drawing Dies Private Limited</h3> -->
                 <ul>
                   <li class="flex items-center mb-4"><img src="assets/icons/location.png" alt="location" class="w-6 mr-4"></img><a href="https://maps.app.goo.gl/xpQBtfGTnbHieW688" class="z-10">No.27, Ground Floor, Punjani Industrial Estate, Khopat, Khopat, Thane, Maharashtra - 400601, India</a></li>
-                  <li class="flex items-center mb-4"><img src="assets/icons/phone.png" alt="Phone" class="w-6 mr-4"><a href="tel:+919321584055" class="z-10">+91 9321584055</a></li>   
-                  <li class="flex items-center mb-4"><img src="assets/icons/mail.png" alt="Mail" class="w-6 mr-4"><a href="mailto:info@khuranawiredie.com" class="z-10">info@khuranawiredie.com</a></li>                       
+                  <li class="flex items-center mb-4"><img src="assets/icons/phone.png" alt="Phone" class="w-6 mr-4"><a href="tel:+919321584055" class="z-10">+91 9321584055 <br> +91 9967114300</a></li>   
+                  <li class="flex items-center mb-4"><img src="assets/icons/mail.png" alt="Mail" class="w-6 mr-4"><a href="mailto:info@khuranawiredie.com" class="z-10">info@khuranawiredie.com <br>contact@khuranawiredie.com</a></li>                       
               </ul>
             </div>
     
-          
+            <!-- Useful Links & Products -->
+              <div class="grid grid-cols-1 gap-6 z-20 md:ml-10">
+                <div>
+                    <h3 class="text-lg font-semibold py-6">Useful Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>About</a></li>
+                        <li><a href="products.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Products</a></li>
+                        <li><a href="gallery.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Gallery</a></li>
+                        <!-- <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Die Chart</a></li> -->
+                        <li><a href="contact.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Contact Us</a></li>
+                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
             <div class="grid grid-cols-1 gap-6 z-20">
               <div>
                 <h3 class="text-lg font-semibold py-6">Our Products</h3>
@@ -537,22 +554,7 @@
                 </ul>
             </div>
             </div>
-              <!-- Useful Links & Products -->
-              <div class="grid grid-cols-1 gap-6 z-20">
-                <div>
-                    <h3 class="text-lg font-semibold py-6">Useful Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Home</a></li>
-                        <li><a href="about.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>About</a></li>
-                        <li><a href="products.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Products</a></li>
-                        <li><a href="gallery.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Gallery</a></li>
-                        <!-- <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Die Chart</a></li> -->
-                        <li><a href="contact.html" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Contact Us</a></li>
-                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-gray-400"><i class="fas fa-chevron-right text-[#cd5634] mr-2"></i>Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
+              
     
             <!-- Certifications  -->
              <div class="md:text-left space-y-3 z-20">
@@ -568,7 +570,7 @@
           
           <div class="border-t border-gray-700 mt-6 pt-4 text-center text-xs md:text-sm text-gray-400 z-20">
             <p>Copyright © 2025 <a href="index.html" class="hover:text-gray-300">Khurana Wire Drawing Dies Pvt Ltd. </a>All Rights Reserved. </p>
-            <p>Website Design & SEO By <a href="www.benzenecorp.com" class="hover:text-gray-300">Benzene Corporation</a></p>
+            <p>Website Design & SEO By <a href="https://benzenecorp.com/" class="hover:text-gray-300">Benzene Corporation</a></p>
           </div>
           <div class="flex justify-center space-x-4 mt-4 ">
             <a href="#" class="z-20"><img src="assets/icons/youtube.png" alt="YouTube" class="w-6"></a>

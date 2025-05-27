@@ -8,8 +8,8 @@
     { title: "TC Shaped Bar Die", imageUrl: "assets/img/products_no_bg/tc_shaped_bar_die1.png", link: "tcshapedbardie.html", buttonText: "LEARN MORE" },
     { title: "TC Special Profile Shape Die", imageUrl: "assets/img/products_no_bg/TC_SPL_Profile_Shaped_dies1.png", link: "tcspecialprofileshapedie.html", buttonText: "LEARN MORE" },
     { title: "TC Valve Forging Die", imageUrl: "assets/img/products_no_bg/TC_Valve_Forging_Die1.png", link: "tcvalveforgingdie.html", buttonText: "LEARN MORE" },
-    { title: "TC Dies for Concrete Nail", imageUrl: "assets/img/8.webp", link: "tcdiesforconcretenail.html", buttonText: "LEARN MORE" },
-    { title: "TC Compacting Dies", imageUrl: "assets/img/7.webp", link: "tccompactingdies.html", buttonText: "LEARN MORE" },
+    { title: "TC Dies for Concrete Nail", imageUrl: "assets/coming_soon.png", link: "tcdiesforconcretenail.html", buttonText: "LEARN MORE" },
+    { title: "TC Compacting Dies", imageUrl: "assets/coming_soon.png", link: "tccompactingdies.html", buttonText: "LEARN MORE" },
     { title: "Die Reworking Machines & Consumables", imageUrl: "assets/img/products_no_bg/die_reworking_machines1.png", link: "diereworkingmachines.html", buttonText: "LEARN MORE" },
     { title: "I.D. Measuring Gauge Set", imageUrl: "assets/img/products_no_bg/ID_measuring_set4.png", link: "idmeasuringgaugeset.html", buttonText: "LEARN MORE" },
    
